@@ -2,3 +2,7 @@ deployments:
   default:
     ready_wait: 20
     port_forwarding: 3000:3000
+    copy_files:
+      - /assets/photos/ ~/code/myapp/photos/
+      - ~/.ssh/id_rsa ~/code/src/
+      - /home/test-instance/.ssh/id_rsa /home/test-instance/code/src/
