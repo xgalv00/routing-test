@@ -1,5 +1,7 @@
 deployments:
   default:
-    filename: docker-compose-base.yml
+    filename: 
+      - docker-compose-base.yml
+      - docker-compose-prod.yml
     ready_wait: 20
     port_forwarding: 3000:3000
