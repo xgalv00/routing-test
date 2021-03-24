@@ -3,4 +3,3 @@ deployments:
     filename: docker-compose-base.yml
     ready_wait: 20
     port_forwarding: 3000:3000
-    auto_deploy_on_commits: true
