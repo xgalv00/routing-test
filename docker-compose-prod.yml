@@ -1,0 +1,6 @@
+version: '3.2'
+services:
+  memcached:
+      restart: always
+      image: memcached:1.5.1-alpine
+      command: ["-m", "256m"]
